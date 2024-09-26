@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 40%;
+    height: 100vh;
+    background-image: url('images/ciel.jpg');
+    background-size: cover;
+}
+.earth{
+    width: 300px;
+    height: 300px;
+    background-image: url('images/terre.jpg');
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-size: 305px 97%;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 30px 0px 50px #000;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+} 
+.orbit{
+    width: 500px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: rotate-2 30s infinite linear;
+}
+@keyframes rotate-2{
+    100%{
+        transform: translate(-50%,-50%) 
+        rotate(360deg);
+    }
+} 
+.moon{
+    width: 120px;
+    height: 120px;
+    background-image: url('images/soleil.jpg');
+    background-size: 220px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    
+}
